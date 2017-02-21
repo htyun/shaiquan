@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFCF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/home_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FF4500"
+            tools:ignore="UselessParent" >
+
+            <TextView
+                android:id="@+id/tv_home_locator"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="江西师范大学软件学院"
+                android:textColor="#000"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:id="@+id/iv_home1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:padding="10dp"
+                android:src="@drawable/search_bar_icon_normal"
+                tools:ignore="ContentDescription" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <jxnu.x3107.Fragment.View.PullDownScrollView
+            android:id="@+id/refresh_root"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none" >
+
+                <include layout="@layout/homepage_layout_main" />
+            </ScrollView>
+        </jxnu.x3107.Fragment.View.PullDownScrollView>
+    </LinearLayout>
+
+</LinearLayout>

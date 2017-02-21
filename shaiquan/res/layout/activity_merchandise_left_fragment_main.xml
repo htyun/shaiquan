@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <HorizontalScrollView
+        android:id="@+id/merchandise_left_fmmain_horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#424242"
+        android:fadingEdge="@null"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" >
+
+                <RadioGroup
+                    android:id="@+id/merchandise_left_fmmain_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_below="@+id/kuaidaowoxiamian"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="0dp" >
+
+                    <RadioButton
+                        android:id="@+id/merchandise_left_fmmain_btnO"
+                        style="@style/radioButton"
+                        android:background="@drawable/new_custom_tab_indicator"
+                        android:checked="true"
+                        android:text="上架商品"
+                        android:textColor="@android:color/darker_gray" />
+
+                    <RadioButton
+                        android:id="@+id/merchandise_left_fmmain_btnT"
+                        style="@style/radioButton"
+                        android:background="@drawable/new_custom_tab_indicator"
+                        android:text="购买商品"
+                        android:textColor="@android:color/darker_gray" />
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/merchandise_left_fmmain_pager_img"
+                    android:layout_width="100dp"
+                    android:layout_height="0dp"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/merchandise_left_fmmain_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/merchandise_left_fmmain_horizontalScrollView"
+        android:overScrollMode="never" >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

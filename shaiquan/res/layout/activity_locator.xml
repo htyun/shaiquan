@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFCF"
+    tools:context=".LocatorActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/locator_title"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="#FF4500" >
+
+            <ImageView
+                android:id="@+id/iv_back_lo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:padding="10dp"
+                android:src="@drawable/btn_left"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <EditText
+                    android:id="@+id/et_locator_other_lo"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:ems="10"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="定位信息(城市+详细地址)"
+                    android:paddingRight="25dp"
+                    android:singleLine="true"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/iv_locator_tijiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/et_locator_other_lo"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search_api_holo_light" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="#ffffff"
+            android:id="@+id/locator_auto_rlayout" >
+            
+            <TextView 
+                android:id="@+id/locator_auto_rlayout_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击定位定位"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+            
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <ListView
+            android:id="@+id/lv_locator_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:scrollingCache="false" >
+        </ListView>
+    </LinearLayout>
+
+</RelativeLayout>

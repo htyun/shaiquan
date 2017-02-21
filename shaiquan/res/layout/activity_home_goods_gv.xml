@@ -1,0 +1,162 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfcfcf" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/home_goods_gv_activity"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FF4500" >
+
+            <ImageView
+                android:id="@+id/home_goods_gv_activity_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:padding="10dp"
+                android:src="@drawable/btn_left"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/home_goods_gv_activity_iv_user_name_shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/create_contact" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="商品信息" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/home_goods_gv_activity_tv_goods_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="二手商品" />
+
+            <ImageView
+                android:id="@+id/home_goods_gv_activity_iv_goods_image"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/beautiful"
+                android:layout_marginBottom="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/home_goods_gv_activity_tv_goods_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_goods_gv_activity_iv_goods_image"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="  ￥   200" />
+
+            <TextView
+                android:id="@+id/home_goods_gv_activity_tv_goods_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/home_goods_gv_activity_tv_goods_price"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:text="商品详详细信息" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:id="@+id/home_goods_gv_activity_linlayout_user_intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_goods_gv_activity_tv_goods_intro"
+            android:background="#ffffff"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/home_goods_gv_activity_linlayout_user_intro_myself_news_userPhoto"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/home_goods_gv_activity_linlayout_user_intro_myself_news_share_user_pohot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="nimei"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/home_goods_gv_activity_linlayout_user_intro_myself_news_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2小时前"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/home_goods_gv_activity_linlayout_user_intro_myself_news_share_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="绝对正品，低价转手"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/home_goods_gv_activity_linlayout_user_intro_myself_news_detailed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:text="查看商品详情"
+                    android:textColor="#959ba9"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

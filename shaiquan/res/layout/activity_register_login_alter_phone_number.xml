@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/alter_password_register_phone_number_login_st_title"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FF4500" >
+
+            <ImageView
+                android:id="@+id/alter_register_login_left_register_phone_number_login_iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:padding="10dp"
+                android:src="@drawable/btn_left"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/setting_alter_login_phone_number_register_register_phone_number_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_login_title" >
+
+        <EditText
+            android:id="@+id/alter_login_phone_number_register_register_phone_number_edit"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/login_top_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_selector"
+            android:hint="手机号码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/alter_log_rl_regist_phone_number_register_register_phone_number_btn_code"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_regist_selector"
+        android:gravity="center"
+        android:text="获取验证码"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/setting_alter_login_phone_number_code_register_register_phone_number_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_login_title" >
+
+        <EditText
+            android:id="@+id/alter_login_phone_number_code_register_register_phone_number_edit"
+            android:layout_width="320dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/login_top_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/login_selector"
+            android:hint="验证码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#aaaaaa"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Button
+        android:id="@+id/alter_log_rl_regist_phone_number_code_register_register_phone_number_btn_code"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/main_regist_selector"
+        android:gravity="center"
+        android:text="下一步"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+</LinearLayout>

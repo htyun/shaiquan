@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/about_left_activity"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FF4500" >
+
+        <ImageView
+            android:id="@+id/about_left_activity_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:padding="10dp"
+            android:src="@drawable/btn_left"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/about_left_activity_tv_about"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="《晒圈》APP 是作为校园二手交易的平台" />
+
+</RelativeLayout>

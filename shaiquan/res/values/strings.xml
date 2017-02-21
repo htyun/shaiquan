@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">晒圈</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_seek">SeekActivity</string>
+    <string name="title_activity_locator">LocatorActivity</string>
+    <string name="title_activity_locator_bai_du">LocatorBaiDuActivity</string>
+    <string name="title_activity_picture_head">PictureHeadActivity</string>
+    <string name="title_activity_register">晒圈</string>
+    <string name="title_activity_register_login">RegisterLoginActivity</string>
+    <string name="title_activity_register_register">RegisterRegisterActivity</string>
+    <string name="title_activity_setting_alter_password">SettingAlterPasswordActivity</string>
+    <string name="title_activity_first_login">晒圈</string>
+    <string name="title_activity_register_login_alter_student_number">RegisterLoginAlterStudentNumberActivity</string>
+    <string name="title_activity_register_login_alter_phone_number">RegisterLoginAlterPhoneNumberActivity</string>
+    <string name="title_activity_register_register_next">RegisterRegisterNextActivity</string>
+    <string name="title_activity_personalleft_alter_phone_code">PersonalleftAlterPhoneCodeActivity</string>
+    <string name="title_activity_register_login_fotget">RegisterLoginFotgetActivity</string>
+    <string name="title_activity_register_login_alter_phone_number_alter_password">RegisterLoginAlterPhoneNumberAlterPasswordActivity</string>
+    <string name="title_activity_wel_come">WelComeActivity</string>
+    <string name="title_activity_home_goods_gv">HomeGoodsGVActivity</string>
+    <string name="title_activity_merchandiseleft_issue">MerchandiseleftIssueActivity</string>
+    <string name="title_activity_aboutleft">AboutleftActivity</string>
+    <string name="title_activity_home_menu_class">HomeMenuClassActivity</string>
+    <string name="title_activity_user_intro">UserIntroActivity</string>
+    <string name="title_activity_sun_group_ser">SunGroupSerActivity</string>
+
+</resources>

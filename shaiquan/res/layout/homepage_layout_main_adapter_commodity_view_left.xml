@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/commodity_bg"
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        tools:ignore="UselessParent" >
+
+        <ImageView
+            android:id="@+id/commodity_name"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:background="@drawable/ic_launcher"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/commodity_shopname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/commodity_name"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="商品推荐"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            tools:ignore="HardcodedText,SpUsage" />
+
+        <TextView
+            android:id="@+id/commodity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/commodity_shopname"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/commodity_name"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="产品简介"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            tools:ignore="HardcodedText,SpUsage" />
+    </RelativeLayout>
+
+</LinearLayout>

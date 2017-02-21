@@ -1,0 +1,189 @@
+<!--
+ <jxnu.x3107.SunGroup.View.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:SunGroup="http://schemas.android.com/apk/res/jxnu.n433.x3107.SunGroup"
+    android:id="@+id/main_id_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    SunGroup:rightPadding="80dp"
+    android:overScrollMode="never"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/left_bg"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/homepage_Move"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <include layout="@layout/activity_main_layout_left" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ffffff"
+            tools:ignore="DisableBaselineAlignment" >
+
+            <RelativeLayout
+                android:id="@+id/homepage_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent,UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/homepage_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/guide_home_on"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/homepage_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="首页"
+                        android:textColor="#82858b"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/shopping_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UseCompoundDrawables,UselessParent" >
+
+                    <ImageView
+                        android:id="@+id/shopping_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/news_unselected"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/shopping_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="收藏"
+                        android:textColor="#82858b"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </RelativeLayout>
+            
+               <RelativeLayout
+                android:id="@+id/myself_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent,UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/myself_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/news_unselected"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/myself_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="关注"
+                        android:textColor="#82858b"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/message_layout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent,UseCompoundDrawables" >
+
+                    <ImageView
+                        android:id="@+id/message_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/news_unselected"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/message_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="晒圈"
+                        android:textColor="#82858b"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </RelativeLayout>
+
+         
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

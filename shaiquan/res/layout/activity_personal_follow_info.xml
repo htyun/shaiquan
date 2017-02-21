@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/jxnu.n433.x3107.SunGroup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFCFCF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/home_title_personal_follow"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:background="#FF4500" >
+
+            <ImageView
+                android:id="@+id/personal_left_iv_back_personal_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:padding="10dp"
+                android:src="@drawable/btn_left"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/personal_left_iv_menu_personal_follow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:src="@drawable/menu" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/friend_bg" >
+
+        <TextView
+            android:id="@+id/personal_left_tv_name_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="name"
+            android:textColor="#000000"
+            android:textSize="15dp" />
+
+        <RelativeLayout
+            android:id="@+id/personal_left_iv_head_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" >
+
+            <jxnu.x3107.Fragment.View.RoundImageView
+                android:id="@+id/zdy_image_personal_follow"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/ic_launcher"
+                app:border_color="@color/touming"
+                app:border_width="2dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_sexs_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView1_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="性别"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/sexs_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView1_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_site_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView2_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="所在地"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/sites_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2_personal_follow"
+            android:layout_alignBottom="@+id/textView2_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_intro_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView3_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="简介"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/intros_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_school_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView4_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="学校"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/school_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView4_personal_follow"
+            android:layout_alignBottom="@+id/textView4_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_birthday_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView5_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="生日"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/birthday_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView5_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_qq_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView6_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="QQ"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/qq_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView6_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_mailbox_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView7_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="邮箱"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/mailbox_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView7_personal_follow"
+            android:layout_alignBottom="@+id/textView7_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/personal_left_layout_phonenumber_personal_follow"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#EAEAEA" >
+
+        <TextView
+            android:id="@+id/textView8_personal_follow"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:text="电话号码"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/phonenumber_personal_follow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView8_personal_follow"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="20dp"
+            android:singleLine="true"
+            android:text="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/myself_news_userPhoto"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/myself_news_share_user_pohot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="nimei"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/myself_news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2小时前"
+            android:textColor="#C6C6C6"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/myself_news_share_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="绝对正品，低价转手"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/myself_news_share_pohot"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+            android:id="@+id/myself_news_date_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="5dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/myself_news_detailed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dip"
+                android:text=""
+                android:textColor="#959ba9"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/myself_news_reply_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="47dp"
+                android:background="@drawable/ic_thank" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
